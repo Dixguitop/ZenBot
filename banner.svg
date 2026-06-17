@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
+  <defs>
+    <!-- Fondo -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#0d0d1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0f"/>
+    </linearGradient>
+
+    <!-- Glow principal del texto -->
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow línea -->
+    <filter id="lineGlow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Clip del canvas -->
+    <clipPath id="canvas">
+      <rect width="800" height="160"/>
+    </clipPath>
+
+    <!-- Scanlines -->
+    <pattern id="scan" x="0" y="0" width="800" height="4" patternUnits="userSpaceOnUse">
+      <rect width="800" height="1" fill="rgba(0,0,0,0.25)" y="2"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#canvas)">
+    <!-- Fondo -->
+    <rect width="800" height="160" fill="url(#bg)"/>
+
+    <!-- Partículas flotantes -->
+    <g opacity="0.4">
+      <circle cx="60" cy="30" r="1" fill="#7c3aed">
+        <animate attributeName="cy" values="30;120;30" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="140" cy="110" r="1" fill="#a855f7">
+        <animate attributeName="cy" values="110;20;110" dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="680" cy="50" r="1" fill="#7c3aed">
+        <animate attributeName="cy" values="50;130;50" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.7;0" dur="7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="750" cy="90" r="1.5" fill="#a855f7">
+        <animate attributeName="cy" values="90;15;90" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="20" r="1" fill="#c084fc">
+        <animate attributeName="cy" values="20;140;20" dur="11s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.4;0" dur="11s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Línea superior animada -->
+    <line x1="-800" y1="1" x2="800" y2="1" stroke="#7c3aed" stroke-width="1" opacity="0.6" filter="url(#lineGlow)">
+      <animateTransform attributeName="transform" type="translate" values="-800,0;800,0;-800,0" dur="4s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Línea inferior animada (inversa) -->
+    <line x1="800" y1="159" x2="-800" y2="159" stroke="#a855f7" stroke-width="1" opacity="0.6" filter="url(#lineGlow)">
+      <animateTransform attributeName="transform" type="translate" values="800,0;-800,0;800,0" dur="4s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Texto ZΞN-BOT principal -->
+    <text
+      x="400" y="105"
+      text-anchor="middle"
+      font-family="'Courier New', Courier, monospace"
+      font-size="72"
+      font-weight="700"
+      letter-spacing="8"
+      fill="#c084fc"
+      filter="url(#glow)"
+    >
+      ZΞN-BOT
+      <!-- Pulso de opacidad suave -->
+      <animate attributeName="opacity" values="1;0.85;1" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Capa glitch roja (desplazada a la izquierda) -->
+    <text
+      x="400" y="105"
+      text-anchor="middle"
+      font-family="'Courier New', Courier, monospace"
+      font-size="72"
+      font-weight="700"
+      letter-spacing="8"
+      fill="#f43f5e"
+      opacity="0"
+    >
+      ZΞN-BOT
+      <animate attributeName="opacity" values="0;0;0.35;0;0;0;0.2;0;0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="400;397;400;403;400" dur="5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Capa glitch cyan (desplazada a la derecha) -->
+    <text
+      x="400" y="105"
+      text-anchor="middle"
+      font-family="'Courier New', Courier, monospace"
+      font-size="72"
+      font-weight="700"
+      letter-spacing="8"
+      fill="#06b6d4"
+      opacity="0"
+    >
+      ZΞN-BOT
+      <animate attributeName="opacity" values="0;0;0;0.3;0;0;0;0.18;0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="400;403;400;397;400" dur="5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Scanlines overlay -->
+    <rect width="800" height="160" fill="url(#scan)" opacity="0.3"/>
+
+    <!-- Subtítulo -->
+    <text
+      x="400" y="138"
+      text-anchor="middle"
+      font-family="'Courier New', Courier, monospace"
+      font-size="11"
+      letter-spacing="5"
+      fill="#7c3aed"
+      opacity="0.9"
+    >
+      W H A T S A P P · B O T · v 7
+      <animate attributeName="opacity" values="0.9;0.5;0.9" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
