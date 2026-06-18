@@ -40,44 +40,6 @@
 
 ---
 
-## Arquitectura
-
-```
-zenbot/
-├── zen.js                  ← Punto de entrada, conexión WebSocket
-├── handler.js              ← Motor principal de comandos y eventos
-├── config.js               ← Configuración global
-├── lib/
-│   ├── database/
-│   │   ├── db.js           ← Conexión MongoDB
-│   │   └── models/         ← Esquemas de usuarios y grupos
-│   ├── games/              ← Lógica de juegos (trivia, acertijos, palabras)
-│   ├── games/rpg/          ← Sistema RPG completo + gacha
-│   ├── scrapers/           ← Scrapers internos
-│   ├── serializer.js       ← Serialización de mensajes Baileys
-│   ├── caches.js           ← Sistema de caché multicapa
-│   ├── jadibot.js          ← Motor de sub-bots
-│   ├── rpgManager.js       ← Gestión de niveles y resets diarios
-│   └── queue.js            ← Cola de tareas
-└── plugins/
-    ├── P-ANIME/            ← Comandos de anime
-    ├── P-BUSQUEDAS/        ← Búsquedas web y multimedia
-    ├── P-CONVERTIDORES/    ← Conversión de formatos
-    ├── P-CREADOR/          ← Control del bot (owner)
-    ├── P-DESCARGAS/        ← Descargas de plataformas
-    ├── P-ECONOMIA/         ← Sistema económico completo
-    ├── P-GRUPOS/           ← Administración de grupos
-    ├── P-INFO/             ← Menú, uptime, info
-    ├── P-JADIBOT/          ← Control de sub-bots
-    ├── P-JUEGOS/           ← Minijuegos y diversión
-    ├── P-NSFW/             ← Contenido para adultos
-    ├── P-REGISTRO/         ← Sistema de registro de usuarios
-    ├── P-RPG/              ← Comandos de granja y RPG
-    └── P-TOOLS/            ← Herramientas y stalkers
-```
-
----
-
 ## Instalación
 
 ### Requisitos previos
