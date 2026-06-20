@@ -2,7 +2,8 @@
 
 <img src="banner.svg" alt="ZΞN-BOT" width="800"/>
 
-**Bot de WhatsApp multifuncional — construido desde cero por [AxelDev09](https://github.com/AxelDev09)**
+**Bot de WhatsApp multifuncional**
+**Construidoonstruidocionalonstruidodesde cero por [AxelDev09](https://github.com/AxelDev09)**
 
 [![Version](https://img.shields.io/badge/versión-7.0.0-blueviolet?style=for-the-badge&logo=whatsapp&logoColor=white)](.)
 [![Node](https://img.shields.io/badge/Node.js-v18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](.)
