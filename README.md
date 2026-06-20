@@ -18,26 +18,7 @@
 
 **ZenBot** es un bot de WhatsApp de alto rendimiento construido sobre [Baileys](https://github.com/WhiskeySockets/Baileys), con una arquitectura modular de plugins, economía propia, sistema RPG, descargas multimedia y mucho más. Diseñado para grupos grandes, con soporte para múltiples sub-bots simultáneos.
 
-> **Más de 245 archivos. Más de 16 categorías de plugins. Un solo bot que los gobierna a todos.**
-
----
-
-## Características principales
-
-| Módulo | Descripción |
-|--------|-------------|
-| ⚔️ **RPG & Granja** | Sistema completo con parcelas, cultivos, cocina, tienda y granero |
-| 💰 **Economía** | ZenCoins, banco, duelos, robos, ruleta, slots, pesca, minería y más |
-| 🤖 **Sub-Bots (Jadibot)** | Hasta 40 bots secundarios con control independiente por grupo |
-| 📥 **Descargas** | YouTube, TikTok, Instagram, Spotify, Facebook, MediaFire, MEGA, GitHub, Pinterest, Threads... |
-| 🔍 **Búsquedas** | Imágenes, GIFs, música, wallpapers, anime, memes, TikTok, Pinterest |
-| 🎮 **Minijuegos** | Trivia, Ahorcado, PPT, Matemática, Acertijos, Tic-Tac-Toe, Ship y más |
-| 🎌 **Anime** | Búsqueda, descarga, reacciones, manhwa, frases animadas |
-| 🔄 **Convertidores** | Stickers, PDF, audio, video, imágenes, emojis, cripto, calculadora |
-| 👥 **Gestión de grupos** | Ban, warn, tag, promoções, link, foto, descripción, modo admin, NSFW |
-| 🔧 **Herramientas** | Stalk de redes sociales, QR, HD, GitHub info, npm info, IA, viewonce |
-| 🔞 **NSFW** | Contenido +18 activable por grupo, con verificación de edad |
-| 👋 **Bienvenidas** | Sistema automático de bienvenida y despedida por grupo |
+> **Más de 245 archivos. Más de 16 categorías de plugins. Un solo bot que los gobierna a todos 🥵.**
 
 ---
 
